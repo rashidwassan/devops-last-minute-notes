@@ -17,5 +17,5 @@ This repository contains two main resources:
 These documents are intended as quick reference guides. You can view them directly in GitHub or clone the repository to your local machine for offline access.
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/yourusername/devops-last-minute-notes.git
 cd devops-last-minute-notes
