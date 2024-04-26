@@ -4,13 +4,17 @@ Welcome to the Linux and DevOps Resource Repository! This repository is designed
 
 ## What's Inside
 
-This repository contains two main resources:
+If you want to follow these resources as your DevOps roadmap, here is the proper sequence:
 
-1. **100 Essential Linux Commands**
-   - A detailed guide covering basic to advanced Linux commands. This includes usage examples and brief descriptions, catering to both newcomers and seasoned professionals.
+1. **Basic DevOps Concepts**
 
-2. **Detailed DevOps Concepts**
-   - An extensive list of 50 DevOps concepts, explaining core principles, practices, tools, and methodologies integral to DevOps workflows.
+2. **Critical Linux Concepts**
+3. **Linux Commands to Practice**
+4. **Computer Networking**
+5. **Docker & Containerization**
+6. **Kubernetes**
+7. **Jenkins**
+8. **Ansible**
 
 ## Usage
 
