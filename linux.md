@@ -1,120 +1,612 @@
-# 100 Linux Commands
+# Linux Command Reference
 
-## Basic Commands
-1. `ls`: List files and directories.
-2. `cd`: Change directory.
-3. `pwd`: Print working directory.
-4. `mkdir`: Make directory.
-5. `touch`: Create an empty file.
-6. `cp`: Copy files or directories.
-7. `mv`: Move or rename files or directories.
-8. `rm`: Remove files or directories.
-9. `cat`: Concatenate and display file content.
-10. `less`: Display file content one screen at a time.
-11. `head`: Display the first part of a file.
-12. `tail`: Display the last part of a file.
-13. `grep`: Search for patterns in files.
-14. `wc`: Count lines, words, and characters in a file.
-15. `chmod`: Change file permissions.
-16. `chown`: Change file owner and group.
-17. `chgrp`: Change group ownership of a file.
-18. `ln`: Create hard or symbolic links.
-19. `find`: Search for files and directories.
-20. `locate`: Find files by name.
-21. `file`: Determine file type.
-22. `du`: Display disk usage of files and directories.
-23. `df`: Display disk space usage.
-24. `mkdir -p`: Create parent directories if they do not exist.
-25. `rmdir`: Remove empty directories.
-26. `tar`: Archive files.
-27. `gzip`: Compress files.
-28. `gunzip`: Decompress files.
+This document provides a reference to 100 commonly used Linux commands, ranging from basic to advanced. Each command is accompanied by a brief description and an example of its usage.
 
-## File System Commands
-29. `mount`: Mount a filesystem.
-30. `umount`: Unmount a filesystem.
-31. `blkid`: Print block device attributes.
-32. `fsck`: Check and repair filesystems.
-33. `mkfs`: Create a filesystem.
-34. `fdisk`: Manipulate disk partition table.
-35. `parted`: Create and manipulate disk partitions.
-36. `lsblk`: List block devices.
-37. `df -h`: Display disk space usage in human-readable format.
-38. `du -h`: Display disk usage in human-readable format.
+## ls
+**Description:** List directory contents.
 
-## Process Management Commands
-39. `ps`: Display running processes.
-40. `top`: Display dynamic real-time view of running processes.
-41. `kill`: Terminate a process.
-42. `killall`: Terminate processes by name.
-43. `pkill`: Signal processes based on name and other attributes.
-44. `pgrep`: List processes based on name and other attributes.
-45. `nice`: Run a command with modified scheduling priority.
-46. `renice`: Change priority of running processes.
-47. `htop`: Interactive process viewer.
 
-## User Management Commands
-48. `useradd`: Add a user.
-49. `userdel`: Delete a user.
-50. `passwd`: Change user password.
-51. `su`: Switch user.
-52. `sudo`: Execute command as another user (typically root).
-53. `chsh`: Change login shell.
+```bash
+ls -l
+```
 
-## Network Commands
-54. `ifconfig`: Display network interface configuration (deprecated, use 'ip' command).
-55. `ip`: Show/manipulate routing, devices, policy routing, and tunnels.
-56. `ping`: Send ICMP echo requests to network hosts.
-57. `traceroute`: Print the route packets trace to network host.
-58. `netstat`: Display network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.
-59. `nslookup`: Query Internet name servers interactively.
-60. `dig`: DNS lookup utility.
-61. `host`: DNS lookup utility.
-62. `hostname`: Print or set system hostname.
-63. `ss`: Utility to investigate sockets.
+## cd
+**Description:** Change the current directory.
 
-## System Information Commands
-64. `uname`: Display system information.
-65. `lsb_release`: Display Linux Standard Base information.
-66. `uptime`: Display system uptime.
-67. `who`: Display users who are currently logged in.
-68. `w`: Display who is logged in and what they are doing.
-69. `last`: Display listing of last logged in users.
-70. `ps aux`: Display all processes.
-71. `free`: Display amount of free and used memory in the system.
-72. `df -h`: Display disk space usage in human-readable format.
-73. `du -h`: Display disk usage in human-readable format.
-74. `lscpu`: Display CPU information.
-75. `lsusb`: Display USB devices information.
-76. `lsblk`: List block devices.
 
-## System Control Commands
-77. `shutdown`: Shutdown or restart the system.
-78. `reboot`: Reboot the system.
-79. `poweroff`: Power off the system.
-80. `halt`: Halt the system.
-81. `init`: System and service manager (deprecated in favor of systemd).
-82. `systemctl`: Control the systemd system and service manager.
-83. `service`: Run a System V init script.
-84. `chkconfig`: Update and query runlevel information for system services.
-85. `journalctl`: Query the systemd journal.
+```bash
+cd /home
+```
 
-## Text Processing Commands
-86. `sed`: Stream editor for filtering and transforming text.
-87. `awk`: Pattern scanning and text processing language.
-88. `cut`: Remove sections from each line of files.
-89. `sort`: Sort lines of text files.
-90. `uniq`: Report or omit repeated lines.
-91. `wc`: Print newline, word, and byte counts for each file.
-92. `tr`: Translate or delete characters.
-93. `tee`: Read from standard input and write to standard output and files.
-94. `paste`: Merge lines of files.
-95. `grep`: Search for patterns in files.
+## pwd
+**Description:** Print working directory.
 
-## Archive and Compression Commands
-96. `tar`: Archive files.
-97. `gzip`: Compress files.
-98. `gunzip`: Decompress files.
-99. `zip`: Package and compress files.
-100. `unzip`: Extract files from a zip archive.
+
+```bash
+pwd
+```
+
+## mkdir
+**Description:** Create a new directory.
+
+
+```bash
+mkdir new_directory
+```
+
+## rmdir
+**Description:** Remove an empty directory.
+
+
+```bash
+rmdir empty_directory
+```
+
+## rm
+**Description:** Remove files or directories.
+
+
+```bash
+rm file.txt
+```
+
+## cp
+**Description:** Copy files or directories.
+
+
+```bash
+cp file.txt /backup
+```
+
+## mv
+**Description:** Move or rename files or directories.
+
+
+```bash
+mv file.txt /new_location
+```
+
+## touch
+**Description:** Change file timestamps. If the file does not exist, it is created empty.
+
+
+```bash
+touch new_file.txt
+```
+
+## chmod
+**Description:** Change the permissions of files or directories.
+
+
+```bash
+chmod 755 script.sh
+```
+
+## chown
+**Description:** Change the owner and group of files.
+
+
+```bash
+chown user:group file.txt
+```
+
+## find
+**Description:** Search for files in a directory hierarchy.
+
+
+```bash
+find . -type f -name "*.txt"
+```
+
+## grep
+**Description:** Print lines matching a pattern.
+
+
+```bash
+grep "search_string" file.txt
+```
+
+## sed
+**Description:** Stream editor for filtering and transforming text.
+
+
+```bash
+sed -i 's/old/new/g' file.txt
+```
+
+## awk
+**Description:** Pattern scanning and processing language.
+
+
+```bash
+awk '{print $1}' file.txt
+```
+
+## cat
+**Description:** Concatenate and display files.
+
+
+```bash
+cat file.txt
+```
+
+## echo
+**Description:** Display message on screen.
+
+
+```bash
+echo "Hello World"
+```
+
+## printf
+**Description:** Format and print data.
+
+
+```bash
+printf "Hello %s\n" "World"
+```
+
+## head
+**Description:** Output the first part of files.
+
+
+```bash
+head -n 5 file.txt
+```
+
+## tail
+**Description:** Output the last part of files.
+
+
+```bash
+tail -n 5 file.txt
+```
+
+## less
+**Description:** View and paginate file contents.
+
+
+```bash
+less file.txt
+```
+
+## more
+**Description:** View file contents interactively.
+
+
+```bash
+more file.txt
+```
+
+## du
+**Description:** Estimate file space usage.
+
+
+```bash
+du -sh /home/user
+```
+
+## df
+**Description:** Report file system disk space usage.
+
+
+```bash
+df -h
+```
+
+## top
+**Description:** Display Linux processes.
+
+
+```bash
+top
+```
+
+## ps
+**Description:** Report a snapshot of the current processes.
+
+
+```bash
+ps aux
+```
+
+## kill
+**Description:** Send a signal to a process.
+
+
+```bash
+kill -9 1234
+```
+
+## killall
+**Description:** Kill processes by name.
+
+
+```bash
+killall process_name
+```
+
+## man
+**Description:** Format and display the on-line manual pages.
+
+
+```bash
+man ls
+```
+
+## sudo
+**Description:** Execute a command as another user.
+
+
+```bash
+sudo apt update
+```
+
+## apt-get
+**Description:** APT package handling utility (Debian-based).
+
+
+```bash
+sudo apt-get install nginx
+```
+
+## yum
+**Description:** Package manager for RPM-based distributions.
+
+
+```bash
+sudo yum install nginx
+```
+
+## dnf
+**Description:** Federated package manager for RPM-based distributions.
+
+
+```bash
+sudo dnf install nginx
+```
+
+## tar
+**Description:** Archive files.
+
+
+```bash
+tar -czvf archive.tar.gz /folder
+```
+
+## gzip
+**Description:** Compress or expand files.
+
+
+```bash
+gzip file.txt
+```
+
+## bzip2
+**Description:** A block-sorting file compressor.
+
+
+```bash
+bzip2 file.txt
+```
+
+## zip
+**Description:** Package and compress (archive) files.
+
+
+```bash
+zip archive.zip file.txt
+```
+
+## unzip
+**Description:** List, test, and extract compressed files in a ZIP archive.
+
+
+```bash
+unzip archive.zip
+```
+
+## ssh
+**Description:** OpenSSH SSH client (remote login program).
+
+
+```bash
+ssh user@host
+```
+
+## scp
+**Description:** Secure copy (remote file copy program).
+
+
+```bash
+scp file.txt user@host:/path
+```
+
+## wget
+**Description:** Retrieve files from the web.
+
+
+```bash
+wget http://example.com/file
+```
+
+## curl
+**Description:** Transfer data from or to a server.
+
+
+```bash
+curl -O http://example.com/file
+```
+
+## iptables
+**Description:** Administration tool for IPv4/IPv6 packet filtering and NAT.
+
+
+```bash
+sudo iptables -L
+```
+
+## crontab
+**Description:** Schedule periodic background work.
+
+
+```bash
+crontab -e
+```
+
+## systemctl
+**Description:** Control the systemd system and service manager.
+
+
+```bash
+systemctl status nginx
+```
+
+## journalctl
+**Description:** Query and display messages from the journal.
+
+
+```bash
+journalctl -u nginx
+```
+
+## vmstat
+**Description:** Report virtual memory statistics.
+
+
+```bash
+vmstat 1 5
+```
+
+## iostat
+**Description:** Report CPU statistics and I/O statistics for devices and partitions.
+
+
+```bash
+iostat
+```
+
+## netstat
+**Description:** Networking statistics.
+
+
+```bash
+netstat -tuln
+```
+
+## ss
+**Description:** Utility to investigate sockets.
+
+
+```bash
+ss -tuln
+```
+
+## ping
+**Description:** Send ICMP ECHO_REQUEST to network hosts.
+
+
+```bash
+ping example.com
+```
+
+## traceroute
+**Description:** Print the route packets trace to network host.
+
+
+```bash
+traceroute example.com
+```
+
+## nslookup
+**Description:** Query Internet name servers interactively.
+
+
+```bash
+nslookup example.com
+```
+
+## dig
+**Description:** DNS lookup.
+
+
+```bash
+dig example.com
+```
+
+## mount
+**Description:** Mount a filesystem.
+
+
+```bash
+sudo mount /dev/sda1 /mnt
+```
+
+## umount
+**Description:** Unmount file systems.
+
+
+```bash
+sudo umount /mnt
+```
+
+## fsck
+**Description:** Check and repair a Linux filesystem.
+
+
+```bash
+sudo fsck /dev/sda1
+```
+
+## dd
+**Description:** Convert and copy a file.
+
+
+```bash
+dd if=/dev/zero of=/dev/sda1
+```
+
+## alias
+**Description:** Define or display aliases.
+
+
+```bash
+alias ll='ls -l'
+```
+
+## unalias
+**Description:** Remove alias definitions.
+
+
+```bash
+unalias ll
+```
+
+## history
+**Description:** Display or manipulate the history list.
+
+
+```bash
+history
+```
+
+## env
+**Description:** Display, set, or remove environment variables.
+
+
+```bash
+env
+```
+
+## export
+**Description:** Set export attribute for shell variables.
+
+
+```bash
+export PATH="/usr/local/bin:$PATH"
+```
+
+## unset
+**Description:** Remove variable or function names.
+
+
+```bash
+unset TEMP
+```
+
+## which
+**Description:** Locate a command.
+
+
+```bash
+which ls
+```
+
+## whereis
+**Description:** Locate the binary, source, and manual page files for a command.
+
+
+```bash
+whereis ls
+```
+
+## who
+**Description:** Show who is logged on.
+
+
+```bash
+who
+```
+
+## whoami
+**Description:** Print the user name associated with the current effective user ID.
+
+
+```bash
+whoami
+```
+
+## uptime
+**Description:** Tell how long the system has been running.
+
+
+```bash
+uptime
+```
+
+## hostname
+**Description:** Show or set the system's host name.
+
+
+```bash
+hostname
+```
+
+## uname
+**Description:** Print system information.
+
+
+```bash
+uname -a
+```
+
+## lsof
+**Description:** List open files.
+
+
+```bash
+lsof -i
+```
+
+## nohup
+**Description:** Run a command immune to hangups.
+
+
+```bash
+nohup ./script.sh &
+```
+
+## watch
+**Description:** Execute a program periodically, showing output fullscreen.
+
+
+```bash
+watch -n 1 date
+```
+
+## strace
+**Description:** Trace system calls and signals.
+
+
+```bash
+strace -c ls
+```
+
+## free
+**Description:** Display memory usage.
+
+
+```bash
+free -h
+```
 
