@@ -15,6 +15,9 @@ Google originally developed it and is now maintained by the Cloud Native Computi
 
 `Clusters:` A collection of nodes that Kubernetes manages.
 
+### Some More Concepts
+`Objects:` Kubernetes objects are like instructions that tell your Kubernetes cluster how to run your applications.
+
 ## Architecture:
 `Master Node:` Controls the Kubernetes cluster, including scheduling, deploying applications, and managing nodes.
 
