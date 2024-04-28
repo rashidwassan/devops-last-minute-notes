@@ -7,43 +7,46 @@ Welcome to the DevOps Last Minute Notes repository! This guide is designed to pr
 Follow this roadmap to navigate through the concepts in a logical order:
 
 ### Basics
+1. **Computer Networking**  
+   Learn the basic concepts of Computer Networking, an essential thing to lay our foundations as DevOps Engineers.  
+   [**Computer Networking Notes**](computer-networking.md)
 
-1. **Linux Concepts**  
+2. **Virtualization**  
+   Virtualization is at the core of DevOps. Having a clear understanding of virtualization will help you understand a lot of DevOps concepts.  
+   [**Virtualization Concepts**](virtualization.md)
+   
+3. **Linux Concepts**  
    Learn the basic concepts of Linux, an essential part of DevOps environments.  
-   [Read Linux Concepts](linux-concepts.md)
+   [**Read Linux Concepts**](linux-concepts.md)
 
-2. **Linux Commands**  
-   Get familiar with common Linux commands that you'll use on a daily basis in DevOps roles.  
-   [Read Linux Commands](linux-commands.md)
+4. **Linux Commands**  
+   Get familiar with common Linux commands that you'll use daily in DevOps roles.  
+   [**Read Linux Commands**](linux-commands.md)
 
-3. **Git**  
+5. **Git**  
    Understand how to use Git, the version control system that's crucial for managing your projects.  
-   [Read Git](git.md)
+   [**Read Git**](git.md)
 
 ### Core DevOps Tools
 
-4. **Docker**  
+6. **Docker**  
    Dive into Docker, a cornerstone for managing containers that encapsulate application environments.  
-   [Read Docker](docker.md)
+   [**Read Docker**](docker.md)
 
-5. **Jenkins**  
+7. **Jenkins**  
    Learn about Jenkins, a continuous integration/continuous deployment tool that automates various stages of your projects.  
    [Read Jenkins](jenkins.md)
 
-6. **Kubernetes**  
+8. **Kubernetes**  
    Explore Kubernetes, the container orchestration tool that manages clusters of containers at scale.  
-   [Read Kubernetes](kubernetes.md)
+   [**Read Kubernetes**](kubernetes.md)
 
 ### Advanced Concepts
 
-7. **DevOps Concepts**  
+9. **DevOps Concepts**  
    Broaden your understanding with advanced DevOps concepts that tie all the tools and practices together.  
-   [Read DevOps Concepts](devops-concepts.md)
+   [**Read DevOps Concepts**](devops-concepts.md)
 
 ## Contributing
 
 Feel free to fork this repository, contribute your notes, and help others in their journey to learn DevOps. If you have any suggestions or corrections, open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
