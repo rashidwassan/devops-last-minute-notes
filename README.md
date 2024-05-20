@@ -26,24 +26,25 @@ Follow this roadmap to navigate through the concepts in a logical order:
    [**Virtualization Concepts**](virtualization.md)
 
 4. **Linux Commands**  
-   Now that you are already familiar with all the necessary concepts to level up, let's get to the next level and practice some important Linux commands to make your life as a DevOps        Engineer easy. This collection the commands is like your multi-purpose toolbox to become a Linux poweruser. Get familiar with common Linux commands that you'll use daily in DevOps        roles.  
+   Now that you are already familiar with all the necessary concepts to level up, let's get to the next level and practice some important Linux commands to make your life as a DevOps        Engineer easy. This collection the commands is like your multi-purpose toolbox to become a Linux power user. Get familiar with common Linux commands that you'll use daily in DevOps        roles.  
    [**Read Linux Commands**](linux-commands.md)
 
 5. **Git**  
-   Understand how to use Git, the version control system that's crucial for managing your projects.  
+   Git is at the core of every organization, regardless of the hosting platform (GitHub, GitLab, or BitBucket), git is used almost everywhere. To understand Continuous Integration, strong understanding of Git is essential.  
    [**Read Git**](git.md)
 
 ### Core DevOps Tools
 
-6. **Docker**  
-   Dive into Docker, a cornerstone for managing containers that encapsulate application environments.  
-   [**Read Docker**](docker.md)
-
-7. **Jenkins**  
+6. **Jenkins**  
+   Now you have an understanding and hands-on with Git, what next? How to propagate your deployment after pushing changes?
    Learn about Jenkins, a continuous integration/continuous deployment tool that automates various stages of your projects.  
    [Read Jenkins](jenkins.md)
 
-8. **Kubernetes**  
+8. **Docker**  
+   Dive into Docker, a cornerstone for managing containers that encapsulate application environments.  
+   [**Read Docker**](docker.md)
+
+9. **Kubernetes**  
    Explore Kubernetes, the container orchestration tool that manages clusters of containers at scale.  
    [**Read Kubernetes**](kubernetes.md)
 
